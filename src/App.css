@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body{
+  width: 100%;
+  font-family: "Lato",sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.headen{
+  font-size: 50px;
+}
+nav , .Main {
+  background-color: rgb(227, 249, 242);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @media screen and (max-width:768px){
+    .headen {
+      font-size: 20px;
+    }
   }
+
+  @media screen and (max-width: 576px) {
+    .photo-5 {
+      height: 50vh;
+  }
+  
+  .photo-5 h6 {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+  }
+  }
+
+  .photo-5 {
+    background-image: url(/public/assets/img-11.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.photo-5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.photo-5 h6, .photo-5 p {
+  position: relative;
+  z-index: 1;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.photo-5 {
+  height: 50vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Picx{
+  margin-top: -120px;
 }
+
+@media screen and (max-width:768px){
+  .Picx {
+      margin-top:0;
+    }
+} 
