@@ -67,10 +67,17 @@ nav , .Main {
 
 .Picx{
   margin-top: -120px;
+  
+  
 }
 
 @media screen and (max-width:768px){
   .Picx {
-      margin-top:0;
+      margin-top:120px;
+    }
+} 
+@media screen and (max-width:320px){
+  .Picx {
+      margin-top:120px;
     }
 } 

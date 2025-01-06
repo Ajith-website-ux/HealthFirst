@@ -2,8 +2,8 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div className="row">
-      <div className="col-lg">
+    // <div className="row">
+      // <div className="col-lg">
         <nav className="navbar navbar-expand-lg text-dark  fs-5">
           <div className="container">
             <a className="navbar-brand fs-1 fw-1" href="#Home">
@@ -88,7 +88,7 @@ export const Navbar = () => {
             </div>
           </div>
         </nav>
-      </div>
-    </div>
+      // </div>
+    // </div>
   );
 };
